@@ -27,6 +27,7 @@ body {
   align-items: center;
   border-bottom: 1px solid $grey;
   height: 67px;
+  position: relative;
 }
 
 .nav-wrap {
@@ -40,8 +41,9 @@ body {
   font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
+  text-decoration: none;
   color: $white;
-  &-letter {
+  .letter {
     text-transform: lowercase;
     color: $purple;
   }
@@ -99,64 +101,138 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 60px;
+  &:hover {
+    background-color: $hard-purple;
+    color: $white;
+  }
+}
+
+.header-rocket {
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+.header-circle {
+  position: absolute;
+  top: 490%;
+  right: 0%;
 }
 
 /* Companies */
-// .companies {
-//   text-align: center;
-//   height: 800px;
-//   &__title {
-//     margin-bottom: 34px;
-//   }
-//   &__text {
-//     color: $hard-purple;
-//   }
-// }
+.companies {
+  text-align: center;
+  &__title {
+    margin-bottom: 34px;
+  }
+  &__text {
+    color: $hard-purple;
+  }
+}
 
-// .brands {
-//   position: relative;
-//   padding-top: 105px;
-//   padding-bottom: 112px;
-//   &__google-maps {
-//     position: absolute;
-//     left: 50%;
-//     transform: translateX(-50%);
-//   }
-//   &__otzovik {
-//     position: absolute;
-//     left: 20%;
-//     top: 80%;
-//   }
-//   &__yandex-maps {
-//     position: absolute;
-//     left: 0;
-//     top: 120%;
-//   }
-//   &__flamp {
-//     position: absolute;
-//     right: 20%;
-//     top: 80%;
-//   }
-//   &__zoon {
-//     position: absolute;
-//     right: 0;
-//     top: 120%;
-//   }
-//   &__2gis {
-//     position: absolute;
-//     right: 0;
-//     top: 210%;
-//   }
-//   &__yell {
-//     position: absolute;
-//     left: 0;
-//     top: 210%;
-//   }
-//   &__irecommend {
-//     position: absolute;
-//     right: 0;
-//     top: 260%;
-//   }
-// }
+.brands-wrap {
+  position: relative;
+  height: 800px;
+}
+
+.brands {
+  padding-top: 105px;
+  padding-bottom: 112px;
+  &__item {
+    .google-maps {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .otzovik {
+      position: absolute;
+      left: 20%;
+      top: 40%;
+    }
+    .yandex-maps {
+      position: absolute;
+      left: 0;
+      top: 60%;
+    }
+    .flamp {
+      position: absolute;
+      right: 20%;
+      top: 40%;
+    }
+    .zoon {
+      position: absolute;
+      right: 0;
+      top: 60%;
+    }
+    .gis {
+      position: absolute;
+      right: 0;
+      top: 80%;
+    }
+    .yell {
+      position: absolute;
+      left: 0;
+      top: 85%;
+    }
+    .irecommend {
+      position: absolute;
+      right: 0;
+      top: 95%;
+    }
+    .plus {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translateX(-50%);
+    }
+  }
+  .keep-hand {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    font-weight: 800;
+  }
+}
+
+.brands-buttons {
+  list-style: none;
+}
+
+.social-networks,
+.bulletins,
+.thematic-forums,
+.marketplaces {
+  display: inline-block;
+  width: 220px;
+  height: 63px;
+  background: $light-grey;
+  color: $black;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+}
+
+.social-networks {
+  left: 3%;
+  bottom: -10%;
+}
+
+.bulletins {
+  left: 18%;
+  bottom: -25%;
+}
+
+.thematic-forums {
+  left: 48%;
+  bottom: -28%;
+}
+
+.marketplaces {
+  right: 3%;
+  bottom: -15%;
+}
 
 @import 'media';
