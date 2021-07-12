@@ -1,8 +1,9 @@
+/* BEFORE ДЛЯ THUMBNAILS !!!!!!!!!!!!!!! */
+/* ЗАДАЦЬ STYLE ДЛЯ НЕКАТОРЫХ ВЫЯВАК !!!!!!!!!!!!!!! */
+
 @import 'vars';
 @import 'libs';
-@import 'fonts'; /* ПОДКЛЮЧИТЬ ФОНТЫ!!!!!!!!!!!!!!!*/
-
-/* СДЕЛАТЬ РАКЕТУ ОТДЕЛЬНО!!!!!!!!!! */
+@import 'fonts';
 
 body {
   font-size: 18px;
@@ -250,12 +251,10 @@ body {
 /* Feedback */
 .feedback {
   background-color: $grey-bg;
-  // margin-top: 332px;
-  // height: 772px;
+  padding-bottom: 103px;
 }
 
 .feedback-slider {
-  // width: 512px;
   display: flex;
   gap: 6%;
   &__item {
@@ -302,6 +301,24 @@ body {
   margin-top: 16%;
   &:hover {
     background-color: $hard-purple;
+  }
+}
+
+/* For */
+.for {
+  background: url('../img/for-bg.png') no-repeat;
+  background-size: cover;
+  height: 676px;
+  color: $white;
+  background-color: $grey-bg;
+  &__title {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  &__text {
+    text-align: center;
+    padding-bottom: 74px;
   }
 }
 
