@@ -1,13 +1,162 @@
 @import 'vars';
 @import 'libs';
-@import 'fonts';
+@import 'fonts'; /* ПОДКЛЮЧИТЬ ФОНТЫ!!!!!!!!!!!!!!!*/
+
+/* СДЕЛАТЬ РАКЕТУ ОТДЕЛЬНО!!!!!!!!!! */
 
 body {
   font-size: 18px;
+  font-family: 'Gilroy';
 }
 
 .container {
   width: 1045px;
+  margin: 0 auto;
 }
+
+/* Header */
+.header {
+  background: url('../img/header-bg.png') no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $grey;
+  height: 67px;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 610px;
+}
+
+.logo__item {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $white;
+  &-letter {
+    text-transform: lowercase;
+    color: $purple;
+  }
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  &__item {
+    padding-right: 23px;
+    &-link {
+      color: $black;
+      font-size: 16px;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 3px solid $white;
+      }
+    }
+  }
+}
+
+.header-phone {
+  font-weight: 800;
+}
+
+.intro-block {
+  color: $white;
+  &__title {
+    font-size: 36px;
+    margin-top: 123px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 20px;
+    margin-top: 123px;
+    margin-bottom: 60px;
+  }
+}
+
+.decorator {
+  font-weight: 800;
+  border-bottom: 1px solid $white;
+}
+
+.order {
+  display: inline-block;
+  width: 190px;
+  height: 60px;
+  background: $white;
+  color: $hard-purple;
+  font-weight: 800;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Companies */
+// .companies {
+//   text-align: center;
+//   height: 800px;
+//   &__title {
+//     margin-bottom: 34px;
+//   }
+//   &__text {
+//     color: $hard-purple;
+//   }
+// }
+
+// .brands {
+//   position: relative;
+//   padding-top: 105px;
+//   padding-bottom: 112px;
+//   &__google-maps {
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+//   &__otzovik {
+//     position: absolute;
+//     left: 20%;
+//     top: 80%;
+//   }
+//   &__yandex-maps {
+//     position: absolute;
+//     left: 0;
+//     top: 120%;
+//   }
+//   &__flamp {
+//     position: absolute;
+//     right: 20%;
+//     top: 80%;
+//   }
+//   &__zoon {
+//     position: absolute;
+//     right: 0;
+//     top: 120%;
+//   }
+//   &__2gis {
+//     position: absolute;
+//     right: 0;
+//     top: 210%;
+//   }
+//   &__yell {
+//     position: absolute;
+//     left: 0;
+//     top: 210%;
+//   }
+//   &__irecommend {
+//     position: absolute;
+//     right: 0;
+//     top: 260%;
+//   }
+// }
 
 @import 'media';

@@ -1,5 +1,6 @@
 // Gulp Variables
 let gulp = require('gulp'),
+  pug = require('gulp-pug'),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
   uglify = require('gulp-uglify'),
@@ -85,8 +86,22 @@ gulp.task('deploy', function () {
 
 // Gulp Watch
 gulp.task('watch', function () {
+  gulp.watch('app/pug/*.pug', gulp.parallel('pugrender'));
   gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
   gulp.watch('app/js/*.js', gulp.parallel('script'));
+});
+
+// Pug
+gulp.task('pugrender', function () {
+  return gulp
+    .src('app/pug/*.pug')
+    .pipe(
+      pug({
+        pretty: true,
+      })
+    )
+    .pipe(gulp.dest('app'))
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 // Gulp Build
