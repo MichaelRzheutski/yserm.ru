@@ -314,11 +314,31 @@ body {
   &__title {
     text-align: center;
     margin: 0;
+    padding-top: 116px;
     padding-bottom: 35px;
   }
   &__text {
     text-align: center;
     padding-bottom: 74px;
+  }
+
+  .for-badges-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    .for-badges {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        width: 162px;
+        width: 162px;
+        padding-bottom: 37px;
+      }
+      &__text {
+        text-align: center;
+      }
+    }
   }
 }
 
