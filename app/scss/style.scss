@@ -26,6 +26,7 @@ body {
 .global-text {
   text-align: center;
   padding-bottom: 65px;
+  color: $hard-purple;
 }
 
 /* Header */
@@ -347,7 +348,7 @@ body {
   }
 }
 
-// Geo-Ad
+/* Geo-Ad */
 .geo {
   height: 900px;
   &__title {
@@ -355,6 +356,7 @@ body {
   }
   &__text {
     text-align: center;
+    color: $hard-purple;
   }
 }
 
@@ -405,10 +407,49 @@ body {
   align-items: center;
   &__text {
     width: 475px;
+    font-size: 14px;
   }
   &__order {
     @extend .slider-order;
     margin: 0 auto;
+  }
+}
+
+/* Social Traffic */
+.social-traffic {
+  background-color: $traffic-bg;
+}
+
+.traffic-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.traffic__content {
+  width: 400px;
+  .traffic-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 57px;
+    &__item {
+      background: url('../img/traffic/checkbox.png') left center no-repeat;
+      padding-left: 40px;
+      line-height: 36px;
+    }
+  }
+  .traffic-text {
+    font-size: 14px;
+    margin-bottom: 42px;
+  }
+  .traffic-order {
+    @extend .slider-order;
+    margin: 0 auto;
+  }
+}
+
+.traffic-diagram {
+  &__item {
+    margin-left: 68px;
   }
 }
 
