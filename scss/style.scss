@@ -2,6 +2,7 @@
 // ЗАДАЦЬ STYLE ДЛЯ НЕКАТОРЫХ ВЫЯВАК !!!!!!!!!!!!!!!
 // СКАРЭКТАВАЦЬ ЗАГАЛОЎКІ !!!!!!!!!!!!
 // CUSTOM SELECT ARROW !!!!!!!!!!!!
+// ПАДПРАВІЦЬ ВЫШІНЮ !!!!!!!!!!!!
 
 @import 'vars';
 @import 'libs';
@@ -30,7 +31,7 @@ body {
   color: $hard-purple;
 }
 
-/* Header */
+// Header
 .header {
   background: url('../img/header-bg.png') no-repeat;
   background-size: cover;
@@ -137,7 +138,7 @@ body {
   right: 0%;
 }
 
-/* Companies */
+// Companies
 .companies {
   height: 1137px;
   text-align: center;
@@ -254,7 +255,7 @@ body {
   bottom: -15%;
 }
 
-/* Feedback */
+// Feedback
 .feedback {
   background-color: $grey-bg;
   padding-bottom: 103px;
@@ -311,7 +312,7 @@ body {
   }
 }
 
-/* For */
+// For
 .for {
   background: url('../img/for-bg.png') no-repeat;
   background-size: cover;
@@ -349,7 +350,7 @@ body {
   }
 }
 
-/* Geo-Ad */
+// Geo-Ad
 .geo {
   height: 900px;
   padding-bottom: 114px;
@@ -416,7 +417,7 @@ body {
   }
 }
 
-/* Social Traffic */
+// Social Traffic
 .social-traffic {
   background-color: $traffic-bg;
   padding-top: 112px;
@@ -464,7 +465,7 @@ body {
   }
 }
 
-/*Geolocation*/
+// Geolocation
 .geolocation {
   padding-top: 112px;
   padding-bottom: 118px;
@@ -537,6 +538,45 @@ body {
     padding-left: 40px;
     line-height: 36px;
     line-height: 30px;
+  }
+}
+
+// Map links
+.map-services {
+  @extend .geolocation;
+  &__title {
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    color: $hard-purple;
+    padding-bottom: 70px;
+  }
+}
+
+.map-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    width: 220px;
+    height: 63px;
+    text-align: center;
+    line-height: 63px;
+    background-color: $light-grey;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    margin-right: 26px;
+    transition: background-color 0.2s linear;
+    &_aqua {
+      @extend .map-links__link;
+      background-color: $aqua;
+    }
+    &:hover {
+      background-color: $geo-hover;
+    }
   }
 }
 
