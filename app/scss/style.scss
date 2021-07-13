@@ -543,6 +543,7 @@ body {
 
 // Map links
 .map-services {
+  background-color: $map-bg;
   @extend .geolocation;
   &__title {
     text-align: center;
@@ -578,6 +579,12 @@ body {
       background-color: $geo-hover;
     }
   }
+}
+
+// Footer
+.footer {
+  height: 82px;
+  background-color: $footer-bg;
 }
 
 @import 'media';
