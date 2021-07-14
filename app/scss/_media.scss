@@ -1,0 +1,284 @@
+/* --------- Min-Width 800px --------- */
+@media (min-width: 800px) {
+  // header
+  .header-wrap {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 610px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 800;
+    background: none;
+    margin-left: 10%;
+    &__item {
+      padding-right: 23px;
+      &-link {
+        color: $black;
+        font-size: 16px;
+        text-decoration: none;
+        transition: color 0.2s linear;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .intro-block {
+    text-align: left;
+    &__title {
+      margin-top: 123px;
+    }
+    &__text {
+      margin-top: 123px;
+    }
+  }
+
+  // For
+  .for {
+    height: 783px;
+    color: $white;
+  }
+  .for-badges-wrap {
+    flex-direction: row;
+    justify-content: space-evenly;
+    .for-badges {
+      &__text {
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* --------- Min-Width 1000px --------- */
+@media (min-width: 1000px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .header-phone {
+    display: block;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+  }
+
+  // Companies
+  .companies {
+    height: 1137px;
+    padding-top: 112px;
+    padding-bottom: 0;
+  }
+  .brands-wrap {
+    height: 800px;
+  }
+  .brands {
+    padding-top: 105px;
+    padding-bottom: 112px;
+    display: block;
+    &__item {
+      margin-bottom: 0;
+      .google-maps {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .otzovik {
+        position: absolute;
+        left: 20%;
+        top: 40%;
+      }
+      .yandex-maps {
+        position: absolute;
+        left: 0;
+        top: 60%;
+      }
+      .flamp {
+        position: absolute;
+        right: 20%;
+        top: 40%;
+      }
+      .zoon {
+        position: absolute;
+        right: 0;
+        top: 60%;
+      }
+      .gis {
+        position: absolute;
+        right: 0;
+        top: 80%;
+      }
+      .yell {
+        position: absolute;
+        left: 0;
+        top: 85%;
+      }
+      .irecommend {
+        position: absolute;
+        right: 0;
+        top: 95%;
+      }
+      .plus {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translateX(-50%);
+      }
+    }
+    .keep-hand {
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translateX(-50%);
+      font-weight: 800;
+    }
+  }
+  .brands-buttons {
+    margin-top: 0;
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .social-networks,
+  .bulletins,
+  .thematic-forums,
+  .marketplaces {
+    position: absolute;
+  }
+
+  .social-networks {
+    left: 3%;
+    bottom: -10%;
+  }
+
+  .bulletins {
+    left: 18%;
+    bottom: -25%;
+  }
+
+  .thematic-forums {
+    left: 48%;
+    bottom: -28%;
+  }
+
+  .marketplaces {
+    right: 3%;
+    bottom: -15%;
+  }
+
+  // Feedback
+  .feedback-slider {
+    flex-direction: row;
+    &__item--big {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .thumbnails {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .feedback-slider__content {
+    text-align: left;
+    padding-left: 63px;
+  }
+
+  .slider-order {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    width: 190px;
+    height: 60px;
+    color: $white;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: $button-purple;
+    border-radius: 30px;
+    margin-top: 90px;
+    transition: background-color 0.2s linear;
+    &:hover {
+      background-color: $hard-purple;
+    }
+  }
+}
+
+/* --------- Min-Width 1100px --------- */
+@media (min-width: 1100px) {
+  .container {
+    width: 1045px;
+    margin: 0 auto;
+  }
+
+  // // Geo-Ad
+  // .geo {
+  //   height: 900px;
+  // }
+
+  // .geo-content {
+  //   height: 595px;
+  //   flex-direction: row;
+  //   .geo-links {
+  //     flex-direction: row;
+  //     &__link {
+  //       width: 220px;
+  //       height: 63px;
+  //       text-align: center;
+  //       line-height: 63px;
+  //       background-color: $light-grey;
+  //       border-radius: 30px;
+  //       margin-bottom: 18px;
+  //       margin-right: 17px;
+  //       transition: background-color 0.2s linear;
+  //       &:hover {
+  //         background-color: $geo-hover;
+  //       }
+  //       &_aqua {
+  //         // @extend .geo-links__link;
+  //         background-color: $aqua;
+  //       }
+  //       &_big {
+  //         // @extend .geo-links__link;
+  //         width: 100%;
+  //         background-color: $geo-big;
+  //       }
+  //     }
+  //   }
+
+  //   .yandex-maps {
+  //     display: block;
+  //   }
+  // }
+
+  // .words {
+  //   flex-direction: row;
+  //   &__text {
+  //     width: 475px;
+  //   }
+  //   &__order {
+  //     // @extend .slider-order;
+  //   }
+  // }
+}
+
+/* --------- Min-Width 1390px --------- */
+@media (min-width: 1390px) {
+  .header {
+    height: 100vh;
+  }
+}

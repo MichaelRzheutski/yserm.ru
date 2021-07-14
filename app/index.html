@@ -11,6 +11,10 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
+        <div class="rocket-wrap">
+          <div class="header-rocket" style="background: url(../img/rocket.png) no-repeat;"></div>
+          <div class="header-circle" style="background: url(../img/circle.png) no-repeat;"></div>
+        </div>
         <div class="header-wrap">
           <div class="nav-wrap">
             <div class="logo">
@@ -19,9 +23,9 @@
               </a>
             </div>
             <nav class="nav-block">
-              <ul class="main-nav">
+              <ul class="main-nav" id="nav">
                 <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#" target="_blank">о нас</a>
+                  <a class="main-nav__item-link" href="about.html" target="_blank">о нас</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__item-link" href="#" target="_blank">услуги</a>
@@ -38,9 +42,8 @@
               </ul>
             </nav>
           </div>
+          <button class="nav-toggle" id="nav_toggle" type="button"><span class="nav-toggle__item">Menu</span></button>
           <span class="header-phone">+7 (795) 345-60-89</span>
-          <img class="header-rocket" src="img/rocket.png" alt="Rocket">
-          <img class="header-circle" src="img/circle.png" alt="Circle">
         </div> <!-- header-wrap -->
         <div class="intro-block">
           <h1 class="intro-block__title">Найди новые точки роста!</h1>
@@ -119,21 +122,56 @@
         </h2>
         <div class="feedback__text global-text">Положительные отpывы и воская оценка<br>
           дает более 20% прироста продаж</div>
+
         <div class="feedback-slider">
-          <div class="feedback-slider__media">
-            <img class="feedback-slider__item" src="img/fedback/map.png" alt="Map">
-            <div class="thumbnails">
-              <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail1.png" alt="Thumbnail1">
-              <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail2.png" alt="Thumbnail2">
-              <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail3.png" alt="Thumbnail3">
-              <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail4.png" alt="Thumbnail4">
+
+          <!-- <div class="slider-for">
+            <div class="product-1">
+              <img src="img/fedback/map.png" alt="">
+            </div>
+            <div class="product-1">
+              <img src="img/fedback/map.png" alt="">
+            </div>
+            <div class="product-1">
+              <img src="img/fedback/map.png" alt="">
+            </div>
+            <div class="product-1">
+              <img src="img/fedback/map.png" alt="">
             </div>
           </div>
-          <div class="feedback-slider__content">
-            <p>Этот текст про муравьёв. Про то, как они организуют своё сообщество, как выбирают профессию, как проявляют гениальность, смекалку, героизм. А ещё это текст о людях. Потому что всегда, когда мы говорим о животных, даже о самых маленьких, то имеем в виду самих себя. Мозг у обычного лесного муравья в десятки тысяч раз меньше, чем мой. А умеет это существо очень многое. На этот счёт есть прекрасная цитата: «Муравьи так сильно похожи на нас, людей, что даже как-то неловко. Они выращивают грибы, разводят тлей в качестве дойных коров, отправляют на войну армии солдат, распыляют химикаты, чтобы напугать и сбить с толку противника, берут в плен невольников, эксплуатируют детский труд и беспрерывно обмениваются информацией. Короче, делают всё — разве что телевизор не смотрят»</p>
-            <p>Отзывы это не только репутация но и рост позиций в SEO </p>
-            <a class="slider-order" href="#">Заказать</a>
+      
+          <div class="slider-nav">
+            <div class="product-2">
+              <img src="img/fedback/thumbnails/thumbnail1.png" width="120" height="auto" alt="">
+            </div>
+            <div class="product-2">
+              <img src="img/fedback/thumbnails/thumbnail2.png" width="120" height="auto" alt="">
+            </div>
+            <div class="product-2">
+              <img src="img/fedback/thumbnails/thumbnail3.png" width="120" height="auto" alt="">
+            </div>
+            <div class="product-2">
+              <img src="img/fedback/thumbnails/thumbnail4.png" width="120" height="auto" alt="">
+            </div>
           </div>
+        </div> -->
+
+        <div class="feedback-slider__media">
+          <img class="feedback-slider__item feedback-slider__item--big" src="img/fedback/map.png" alt="Map">
+          <div class="thumbnails">
+            <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail1.png" alt="Thumbnail1">
+            <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail2.png" alt="Thumbnail2">
+            <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail3.png" alt="Thumbnail3">
+            <img class="thumbnails__item" src="img/fedback/thumbnails/thumbnail4.png" alt="Thumbnail4">
+          </div>
+        </div>
+        <div class="feedback-slider__content">
+          <p>Этот текст про муравьёв. Про то, как они организуют своё сообщество, как выбирают профессию, как проявляют гениальность, смекалку, героизм. А ещё это текст о людях. Потому что всегда, когда мы говорим о животных, даже о самых маленьких, то имеем в виду самих себя. Мозг у обычного лесного муравья в десятки тысяч раз меньше, чем мой. А умеет это существо очень многое. На этот счёт есть прекрасная цитата: «Муравьи так сильно похожи на нас, людей, что даже как-то неловко. Они выращивают грибы, разводят тлей в качестве дойных коров, отправляют на войну армии солдат, распыляют химикаты, чтобы напугать и сбить с толку противника, берут в плен невольников, эксплуатируют детский труд и беспрерывно обмениваются информацией. Короче, делают всё — разве что телевизор не смотрят»</p>
+          <p>Отзывы это не только репутация но и рост позиций в SEO </p>
+          <a class="slider-order" href="#">Заказать</a>
+        </div>
+
+          
         </div> <!-- feedback-slider -->
       </div> <!-- container -->
     </section>
@@ -149,31 +187,31 @@
         <div class="for-badges-wrap">
           <div class="for-badges">
             <img src="img/for/for-globe.png" alt="For Globe" class="for-badges__item">
-            <div class="for-badges__text">сетевые компании</div>
+            <div class="for-badges__text"><span>сетевые компании</span></div>
           </div>
 
           <div class="for-badges">
             <img src="img/for/for-map.png" alt="For Map" class="for-badges__item">
-            <div class="for-badges__text">локальный бизнес</div>
+            <div class="for-badges__text"><span>локальный бизнес</span></div>
           </div>
 
           <div class="for-badges">
             <img src="img/for/for-people.png" alt="For People" class="for-badges__item">
-            <div class="for-badges__text">производители и <br> дистребьюторы товаров</div>
+            <div class="for-badges__text"><span>производители и <br> дистребьюторы товаров</span></div>
           </div>
 
           <div class="for-badges">
             <img src="img/for/for-diagram.png" alt="For Diagram" class="for-badges__item">
-            <div class="for-badges__text">отраслевые решения</div>
+            <div class="for-badges__text"><span>отраслевые решения</span></div>
           </div>
         </div> <!-- for-badges-wrap -->
       </div> <!-- container -->
     </section>
     <!-- Geo -->
-    <section class="geo">
+    <!-- <section class="geo">
       <div class="container">
-        <h2 class="geo__title">ГЕОреклама</h2>
-        <div class="geo__text">О ваших предложениях будет знать каждая собака на районе!</div>
+        <h2 class="geo__title global-title">ГЕОреклама</h2>
+        <div class="geo__text global-text">О ваших предложениях будет знать каждая собака на районе!</div>
         <div class="geo-content">
           <div class="geo-links">  
             <a href="#" class="geo-links__link">ЯДирект</a>
@@ -194,100 +232,13 @@
           <p class="words__text">Джон Локк — английский педагог и философ, представитель эмпиризма и либерализма. Способствовал распространению сенсуализма. Его идеи оказали огромное влияние на развитие эпистемологии и политической философии. Он широко признан как один из самых влиятельных мыслителей Просвещения и теоретиков либерализма. Письма Локка произвели воздействие на Вольтера и Руссо, многих шотландских мыслителей Просвещения и американских революционеров. Его влияние также отражено в американской Декларации независимости.</p>
           <a class="words__order" href="#">Заказать</a>
         </div>
-      </div> <!-- container -->
-    </section>
-    <!-- Social Traffic -->
-    <section class="social-traffic">
-      <div class="container">
-        <h2 class="social-traffic__title">
-          Социальный трафик
-        </h2>
-        <div class="social-traffic__text">
-          Оформение, Публикации, комментарии, модерация, <br>
-          чатботы = подписчики и продажи
-        </div>
-        <div class="traffic-wrap">
-          <div class="traffic__content">
-            <ul class="traffic-list">
-              <li class="traffic-list__item">Оформление страницы</li>
-              <li class="traffic-list__item">Отзывы о товаре /  компании</li>
-              <li class="traffic-list__item">Ответы на комментарии</li>
-              <li class="traffic-list__item">Публикации</li>
-              <li class="traffic-list__item">Настрйока чатботов</li>
-              <li class="traffic-list__item">Настрока и ведение рекламы</li>
-            </ul>
-            <div class="traffic-text">
-              Цвет переживается не только визуально, но также психологически и символически, поэтому он изучается как сложнейший феномен многими специалистами. Физики исследуют световые волны, измеряют и классифицируют цвета; химики создают новые пигменты для красок; физиологи изучают действие цвета на глаза и мозг, а психологи — воздействие цвета на психику человека.
-            </div>
-            <a class="traffic-order" href="#">Заказать</a>
-          </div>
-          <div class="traffic-diagram">
-            <img class="traffic-diagram__item" src="img/traffic/traffic.png" alt="Traffic diagram">
-          </div>
-        </div> <!-- traffic-wrap -->
-      </div> <!-- container -->
-    </section>
-    <!-- Geolocation -->
-    <section class="geolocation">
-      <div class="container">
-        <h2 class="geolocation__title">
-          ГЕОпозиционирование
-        </h2>
-        <div class="geolocation__text">
-          Все самые популярыне справочники, карты, навигаторы
-        </div>
-        <div class="geolocation-wrap">
-          <img class="geolocation-img" src="img/geolocation/geolocation.png" alt="Geolocation">
-          <form class="cost" action="#" method="GET" id="cost">
-            <input class="cost__input" type="text" name="yourname" id="yourname" placeholder="Ваше имя...">
-            <input class="cost__input" type="text" name="name" id="name" placeholder="Название...">
-            <input class="cost__input" type="text" name="address" id="address" placeholder="Адрес вашего заведения...">
-            <select class="cost__select" name="scope" id="scope">
-              <option value="" style="font-weight: 800;">Сфера деятельности</option>
-              <option value="Программирование">Программирование</option>
-              <option value="Продажи">Продажи</option>
-              <option value="Бизнес">Бизнес</option>
-              <option value="СЕО">СЕО</option>
-              <option value="СММ">СММ</option>
-            </select>
-            <input class="cost__input" type="text" name="tel" id="tel" placeholder="Телефон">
-            <button class="cost__submit" type="submit">узнать стоимость</button>
-          </form>
-          <ul class="feedback-list">
-            <li class="feedback-list__item">Отзывы о компании</li>
-            <li class="feedback-list__item">Оформление профиля</li>
-            <li class="feedback-list__item">Ответы на отзывы</li>
-            <li class="feedback-list__item">Публикации новостей / товаров</li>
-            <li class="feedback-list__item">Пуликация новостей и акций</li>
-            <li class="feedback-list__item">Поднятие рейтинга</li>
-            <li class="feedback-list__item">Продвижение и реклама профиля</li>
-          </ul>
-        </div> <!-- geolocation-wrap -->
-      </div> <!-- container -->
-    </section>
-    <!-- Map Services -->
-    <section class="map-services">
-      <div class="container">
-        <h2 class="map-services__title">
-          Картографичекие сервисы
-        </h2>
-        <div class="map-services__text">
-          Карт и навигаторов гораpдо больше, чем вы знаете - и везеде вы на первых местах
-        </div>
-        <div class="map-links">  
-          <a href="#" class="map-links__link">Гугл карты</a>
-          <a href="#" class="map-links__link_aqua">MapsMe</a>
-          <a href="#" class="map-links__link">Яндек Карты</a>
-          <a href="#" class="map-links__link_aqua">OpenStreetMap</a>
-          <a href="#" class="map-links__link">Waze</a>
-          <a href="#" class="map-links__link_aqua">Bing Maps</a>
-          <a href="#" class="map-links__link">CityMaps2Gp</a>
-          <a href="#" class="map-links__link_aqua">Sygic Maps</a>
-        </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer"></footer>
+    </section> -->
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
